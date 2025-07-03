@@ -2,7 +2,7 @@ import * as THREE from 'three'
 import { useEffect, useRef, useState } from 'react'
 import { extend, useThree, useFrame } from '@react-three/fiber'
 import { useGLTF, useTexture } from '@react-three/drei'
-import { BallCollider, CuboidCollider, Physics, RigidBody, useRopeJoint, useSphericalJoint } from '@react-three/rapier'
+import { BallCollider, CuboidCollider, RigidBody, useRopeJoint, useSphericalJoint } from '@react-three/rapier'
 import { MeshLineGeometry, MeshLineMaterial } from 'meshline'
 
 extend({ MeshLineGeometry, MeshLineMaterial })
@@ -86,7 +86,8 @@ const Badge = ({ maxSpeed = 50, minSpeed = 10 }) => {
             onPointerUp={(e) => (e.target.releasePointerCapture(e.pointerId), drag(false))}
             onPointerDown={(e) => (e.target.setPointerCapture(e.pointerId), drag(new THREE.Vector3().copy(e.point).sub(vec.copy(card.current.translation()))))}>
             <mesh geometry={nodes.card.geometry}>
-              <meshPhysicalMaterial map={materials.base.map} map-anisotropy={16} clearcoat={1} clearcoatRoughness={0.15} roughness={0.3} metalness={0.5} />
+              {/* <meshPhysicalMaterial map={materials.base.map} map-anisotropy={16} clearcoat={1} clearcoatRoughness={0.15} roughness={0.3} metalness={0.5} /> */}
+              <meshBasicMaterial map={materials.base.map} map-anisotropy={16} clearcoat={1} clearcoatRoughness={0.15} roughness={0.3} metalness={0.5} />
             </mesh>
             <mesh geometry={nodes.clip.geometry} material={materials.metal} material-roughness={0.3} />
             <mesh geometry={nodes.clamp.geometry} material={materials.metal} />

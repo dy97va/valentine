@@ -1,4 +1,4 @@
-import { FaLinkedin, FaInstagram, FaPhone, FaEnvelope } from 'react-icons/fa';
+import { FaLinkedin, FaPhone, FaEnvelope, FaGithub } from 'react-icons/fa';
 import './ContactInfo.css';
 
 const ContactInfo = () => {
@@ -7,21 +7,21 @@ const ContactInfo = () => {
       <div className="contact-row">
         <div className="contact-item">
           <FaLinkedin className="contact-icon" />
-          <a href="https://linkedin.com/in/yourprofile" target="_blank" rel="noopener noreferrer">linkedin.com/in/yourprofile</a>
+          <a href="https://www.linkedin.com/in/valentin-dyrda/" target="_blank" rel="noopener noreferrer">Linkdin</a>
         </div>
         <div className="contact-item">
-          <FaInstagram className="contact-icon" />
-          <a href="https://instagram.com/yourprofile" target="_blank" rel="noopener noreferrer">@yourprofile</a>
+          <FaGithub className="contact-icon" />
+          <a href="https://github.com/dy97va" target="_blank" rel="noopener noreferrer">GitHub</a>
         </div>
       </div>
       <div className="contact-row">
         <div className="contact-item">
           <FaPhone className="contact-icon" />
-          <span>+1 (234) 567-8901</span>
+          <span>+358 465798609</span>
         </div>
         <div className="contact-item">
           <FaEnvelope className="contact-icon" />
-          <a href="mailto:youremail@example.com">youremail@example.com</a>
+          <a href="mailto:dy97va@gmail.com">dy97va@gmail.com</a>
         </div>
       </div>
     </div>
