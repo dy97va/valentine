@@ -1,7 +1,5 @@
 #root {
   margin: 0 auto;
-  /* padding: 2rem; */
-  /* text-align: center; */
   width: 100vw;
   height: 100vh;
 }
@@ -17,8 +15,8 @@ body {
 .app-container {
   display: flex;
   min-height: 100vh;
-  height: 100vh;
   background: #14151a;
   align-items: stretch;
+  gap: clamp(1.5rem, 4vw, 3.5rem);
 }
 
