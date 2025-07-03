@@ -1,4 +1,3 @@
-import React from 'react';
 import { FaLinkedin, FaInstagram, FaPhone, FaEnvelope } from 'react-icons/fa';
 import './ContactInfo.css';
 
