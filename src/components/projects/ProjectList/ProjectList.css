@@ -11,29 +11,8 @@
   justify-content: space-between;
 }
 
-.projects-section h2 {
-  font-size: 3rem;
-  background: linear-gradient( 120deg, rgba(255, 255, 255, 0) 40%, rgba(255, 255, 255, 0.8) 50%, rgba(255, 255, 255, 0) 60%);
-  background-size: 200% 100%;
-  -webkit-background-clip: text;
-  background-clip: text;
-  display: inline-block;
-  animation: shine 3s linear infinite;
-  width: fit-content;
-  height: fit-content;
-  /* padding-left: 10px; */
-}
-
-@keyframes shine {
-  0% {
-    background-position: 100%;
-  }
-  100% {
-    background-position: -100%;
-  }
-}
-
 .projects-list {
+  margin-top: 2rem;
   display: flex;
   flex-direction: column;
   gap: 2rem;

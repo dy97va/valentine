@@ -90,6 +90,13 @@
 @media (max-width: 720px){
     .cv-buttons{
         display: flex;
-        flex-direction: column;
+        /* flex-direction: column; */
+    }
+    .cv-button {
+        font-size: 0.7rem;
+    }
+
+    .cv-button .button-icon {
+        font-size: 0.8rem;
     }
 }

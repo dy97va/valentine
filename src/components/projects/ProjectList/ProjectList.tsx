@@ -11,11 +11,10 @@ export default function ProjectList () {
         <div className="projects-section">
             <div className="project-list-heading">
                 <Resume/>
-                <h2>My work:</h2>
             </div>
             <div className="projects-list">
                  {projects.map((project) => (
-                    <ProjectCard project={project}/>
+                    <ProjectCard project={project} key={project.title}/>
                  ))}
             </div>
         </div>

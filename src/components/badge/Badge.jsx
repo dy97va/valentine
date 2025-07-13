@@ -20,11 +20,9 @@ const Badge = ({ maxSpeed = 50, minSpeed = 10 }) => {
   const [hovered, hover] = useState(false)
   const { viewport }  = useThree()
   var x = -viewport.width / 2.4
-  if (viewport.width < 4.5) {
+  if (window.innerWidth <= 1000) {
     x = 0
   }
-  console.log(x)
-  console.log(viewport.width)
 
   useRopeJoint(fixed, j1, [[0, 0, 0], [0, 0, 0], 1]) // prettier-ignore
   useRopeJoint(j1, j2, [[0, 0, 0], [0, 0, 0], 1]) // prettier-ignore
@@ -92,11 +90,10 @@ const Badge = ({ maxSpeed = 50, minSpeed = 10 }) => {
             onPointerOut={() => hover(false)}
             onPointerUp={(e) => (e.target.releasePointerCapture(e.pointerId), drag(false))}
             onPointerDown={(e) => {
-            if (viewport.width > 4.5) {
+            if (window.innerWidth > 1000) {
                e.target.setPointerCapture(e.pointerId)
                 drag(new THREE.Vector3().copy(e.point).sub(vec.copy(card.current.translation())))}}}>
             <mesh geometry={nodes.card.geometry}>
-              {/* <meshPhysicalMaterial map={materials.base.map} map-anisotropy={16} clearcoat={1} clearcoatRoughness={0.15} roughness={0.3} metalness={0.5} /> */}
               <meshBasicMaterial map={materials.base.map} map-anisotropy={16} clearcoat={1} clearcoatRoughness={0.15} roughness={0.3} metalness={0.5} />
             </mesh>
             <mesh geometry={nodes.clip.geometry} material={materials.metal} material-roughness={0.3} />
