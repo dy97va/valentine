@@ -17,11 +17,11 @@ const ContactInfo = () => {
       <div className="contact-row">
         <div className="contact-item">
           <FaPhone className="contact-icon" />
-          <span>+358 465798609</span>
+          <a href="tel:+358465798609">Phone</a>
         </div>
         <div className="contact-item">
           <FaEnvelope className="contact-icon" />
-          <a href="mailto:dy97va@gmail.com">dy97va@gmail.com</a>
+          <a href="mailto:dy97va@gmail.com">Email</a>
         </div>
       </div>
     </div>

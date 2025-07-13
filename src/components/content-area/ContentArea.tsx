@@ -1,10 +1,9 @@
-import React from 'react'
 import './ContentArea.css'
-import Projects from '../projects/Projects'
+import ProjectList from '../projects/ProjectList/ProjectList'
 
 export const ContentArea = () => {
   return (
-    // <div className='content-area'>ContentArea</div>
-    <Projects/>
+    // add CV and CV download button
+    <ProjectList/>
   )
 }

@@ -6,6 +6,7 @@
 
 body {
   background: #14151a;
+  background: #14151a;
   color: #e0e0e0;
   min-height: 100vh;
   margin: 0;
@@ -13,10 +14,67 @@ body {
 }
 
 .app-container {
-  display: flex;
   min-height: 100vh;
-  background: #14151a;
-  align-items: stretch;
-  gap: clamp(1.5rem, 4vw, 3.5rem);
+  background: #151515;
 }
 
+.badge{
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  z-index: 0;
+}
+
+.content-wrapper {
+  display: flex;
+  align-items: end;
+  z-index: 1;
+  width: 100%;
+}
+
+.left-side {
+  height: fit-content;
+  width: 30%;
+  z-index: 0;
+  position: fixed;
+  bottom: 1%;
+  padding-left: 1%;
+}
+.left-side-spacer
+{
+  width: 30%;
+}
+
+.right-side {
+  width: 70%;
+  align-self: flex-end;
+  z-index: 1;
+}
+
+@media (max-width: 1000px) {
+  .app-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .badge{
+    position: relative;
+    height: 60vh;
+  }
+
+  .content-wrapper{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+
+  .left-side{
+    position: inherit;
+    width: 100%;
+  }
+
+  .right-side{
+    width: 100%;
+  }
+}

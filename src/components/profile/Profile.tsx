@@ -1,11 +1,15 @@
 //@ts-ignore
 import Badge from '../badge/Badge'
-import { Canvas } from '@react-three/fiber'
+import { Canvas, useThree } from '@react-three/fiber'
 import { Physics } from '@react-three/rapier'
-import ContactInfo from '../ContactInfo/ContactInfo'
 import './Profile.css'
 
 function Profile() {
+    // var camDistance = 13
+    // const { viewPort } = useThree()
+    // if (viewport.width < 1000){
+    //     camDistance = 10
+    // }
     return(
         <div className="profile-container">
             <Canvas camera={{ position: [0, 0, 13], fov: 15 }}>
@@ -14,7 +18,6 @@ function Profile() {
                     <Badge />
                 </Physics>
             </Canvas>
-            <ContactInfo />
         </div>
     )
 }

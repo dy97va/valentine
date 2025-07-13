@@ -1,0 +1,95 @@
+.cv-buttons {
+    display: flex;
+    flex-direction: row;
+    width: fit-content;
+    gap: 2rem;
+    align-self: flex-end;
+}
+
+.cv-button {
+    border: none;
+    text-decoration: none;
+    background: linear-gradient(to right, rgb(246,217,146), rgb(246,176,146));
+    display: flex;
+    gap: 0.5rem;
+    border-radius: 2rem;
+    font-size: 0.9rem;
+    font-weight: bold;
+    cursor: pointer;
+    align-items: center;
+    padding: 0;
+    padding: 0.2rem;
+    overflow: hidden;
+    position: relative;
+    transition-duration: 0.3s;
+    height: fit-content;
+    width: fit-content;
+}
+
+.cv-button .button-icon {
+    background-color: #f6b092;
+    border-radius: 2rem;
+    width: 3rem;
+    height: 3rem;
+    font-size: 1rem;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* margin-left: 0.1rem; */
+    overflow: hidden;
+    z-index: 2;
+    transition-duration: 0.3s;
+    position: absolute;
+    box-shadow: 0 2px 16px rgba(0, 0, 0, 0.15);
+}
+
+.cv-button .button-text {
+    padding-right: 1rem;
+    transition-duration: 0.3s;
+    padding-left: 3.5rem;
+}
+
+.cv-button:hover {
+    box-shadow: 0 2px 16px #f6a19246;
+    transition-duration: 0.3s;
+}
+
+.cv-button:hover .button-icon{
+    background: linear-gradient(to right, rgb(246,176,146), rgb(246,217,146));
+    color: black;
+    width: calc(100% - 0.4rem);
+    transition-duration: 0.3s;
+
+}
+
+.cv-button:hover .button-text{
+    color: transparent;
+    transition-duration: 0.3s;
+}
+
+@media (max-width: 1000px) {
+
+    .cv-buttons {
+        margin-top: 20px;
+        width: 100%;
+        align-self:center;
+        justify-content: space-evenly;
+        width: 100%;
+        align-items: center;
+    }
+    .cv-button .button-text {
+    padding-right: 1rem;
+    transition-duration: 0.3s;
+    padding-left: 3.5rem;
+    color: black;
+    }
+
+}
+
+@media (max-width: 720px){
+    .cv-buttons{
+        display: flex;
+        flex-direction: column;
+    }
+}

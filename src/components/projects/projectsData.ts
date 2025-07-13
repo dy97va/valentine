@@ -12,11 +12,10 @@ export interface Project {
 const projects: Project[] = [
   {
     title: 'Nordcraft',
-    description: 'Online leather goods store written in React. Uses Firebase for data storage and auth, and Stripe with Node for payment processing.',
+    description: 'Fully functioning online e-commerce platform, created for a small leather goods company Nordcraft. Written in React, it uses Firebase for data storage and authentication, and Stripe with Node for payment processing.',
     images: [
-      '/assets/pic.png',
-      '/assets/pic.png',
-      '/assets/pic.png',
+      '/assets/nordcraft1.png',
+      '/assets/nordcraft2.png',
     ],
     tags: ['React', 'Firebase', 'Stripe', 'Node.js'],
     links: {
@@ -25,103 +24,19 @@ const projects: Project[] = [
     },
   },
   {
-    title: 'Nordcraft',
-    description: 'Online leather goods store written in React. Uses Firebase for data storage and auth, and Stripe with Node for payment processing.',
+    title: 'Timeline',
+    description: 'Web-based SAAS project for facility and communal areas management and scheduling in apartment complexes. Written in React, uses Firebase for authentication and data storage. Uses stripe for payment processing and subscription status tracking',
     images: [
-      '/assets/pic.png',
-      '/assets/pic.png',
-      '/assets/pic.png',
+      '/assets/timeline1.png',
+      '/assets/timeline2.png',
+      '/assets/timeline3.png',
     ],
-    tags: ['React', 'Firebase', 'Stripe', 'Node.js'],
+    tags: ['React', 'Firebase', 'Stripe', 'Node.js', 'TypeScript'],
     links: {
       demo: '#',
       github: '#',
     },
   },
-  {
-    title: 'Nordcraft',
-    description: 'Online leather goods store written in React. Uses Firebase for data storage and auth, and Stripe with Node for payment processing.',
-    images: [
-      '/assets/pic.png',
-      '/assets/pic.png',
-      '/assets/pic.png',
-    ],
-    tags: ['React', 'Firebase', 'Stripe', 'Node.js'],
-    links: {
-      demo: '#',
-      github: '#',
-    },
-  },
-  {
-    title: 'Nordcraft',
-    description: 'Online leather goods store written in React. Uses Firebase for data storage and auth, and Stripe with Node for payment processing.',
-    images: [
-      '/assets/pic.png',
-      '/assets/pic.png',
-      '/assets/pic.png',
-    ],
-    tags: ['React', 'Firebase', 'Stripe', 'Node.js'],
-    links: {
-      demo: '#',
-      github: '#',
-    },
-  },
-  {
-    title: 'Nordcraft',
-    description: 'Online leather goods store written in React. Uses Firebase for data storage and auth, and Stripe with Node for payment processing.',
-    images: [
-      '/assets/pic.png',
-      '/assets/pic.png',
-      '/assets/pic.png',
-    ],
-    tags: ['React', 'Firebase', 'Stripe', 'Node.js'],
-    links: {
-      demo: '#',
-      github: '#',
-    },
-  },
-  {
-    title: 'Nordcraft',
-    description: 'Online leather goods store written in React. Uses Firebase for data storage and auth, and Stripe with Node for payment processing.',
-    images: [
-      '/assets/pic.png',
-      '/assets/pic.png',
-      '/assets/pic.png',
-    ],
-    tags: ['React', 'Firebase', 'Stripe', 'Node.js'],
-    links: {
-      demo: '#',
-      github: '#',
-    },
-  },
-  {
-    title: 'Nordcraft',
-    description: 'Online leather goods store written in React. Uses Firebase for data storage and auth, and Stripe with Node for payment processing.',
-    images: [
-      '/assets/pic.png',
-      '/assets/pic.png',
-      '/assets/pic.png',
-    ],
-    tags: ['React', 'Firebase', 'Stripe', 'Node.js'],
-    links: {
-      demo: '#',
-      github: '#',
-    },
-  },
-  {
-    title: 'Nordcraft',
-    description: 'Online leather goods store written in React. Uses Firebase for data storage and auth, and Stripe with Node for payment processing.',
-    images: [
-      '/assets/pic.png',
-      '/assets/pic.png',
-      '/assets/pic.png',
-    ],
-    tags: ['React', 'Firebase', 'Stripe', 'Node.js'],
-    links: {
-      demo: '#',
-      github: '#',
-    },
-  },
-];
+]
 
-export default projects;
+export default projects

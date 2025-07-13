@@ -21,7 +21,7 @@
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  font-size: 1rem;
+  font-size: 1.1rem;
   background: rgba(255,255,255,0.04);
   padding: 0.5rem 0.75rem;
   border-radius: 0.5rem;
@@ -30,26 +30,43 @@
 }
 
 .contact-icon {
-  color: #0077b5;
+  /* color: #0077b5; */
+  /* color: #b5b5b5a4; */
+  color: #f6b092;
   font-size: 1.2em;
 }
 
-.contact-item a {
-  color: #e0e0e0;
+.contact-item a,
+.contact-item span {
+  /* color: #e0e0e0;
   text-decoration: none;
   transition: color 0.2s;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+} */
+   /* font-size: 3rem; */
+  color: #b5b5b5a4;
+  background: linear-gradient( 120deg, rgba(255, 255, 255, 0) 40%, rgba(255, 255, 255, 0.8) 50%, rgba(255, 255, 255, 0) 60%);
+  background-size: 200% 100%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  display: inline-block;
+  animation: shine 3s linear infinite;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+@keyframes shine {
+  0% {
+    background-position: 100%;
+  }
+  100% {
+    background-position: -100%;
+  }
 }
 
 .contact-item a:hover {
-  color: #00b4d8;
+  color: #f6b092b1;
+  /* color: #654baba4; */
 }
-
-.contact-item span {
-  color: #e0e0e0;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-} 
